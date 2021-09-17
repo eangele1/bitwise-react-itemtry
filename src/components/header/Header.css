@@ -1,0 +1,117 @@
+:root {
+    --darkblue: #243454;
+    --lightgray: #CCCFD7;
+    --gray: #8C9CA8;
+    --darkgray: #8C94AC;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    z-index: 100;
+}
+
+.header__logo {
+    width: 85px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 640px) {
+    .header__search{
+        visibility: hidden;
+        width: 10px;
+    }
+    #header__mobile__search{
+        display: flex !important;
+    }
+}
+
+.header__search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#header__mobile__search {
+    display: none;
+    flex: 1;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 85%;
+    margin: 10px auto;
+}
+
+.select_style select {
+    border-radius: 6px 0px 0px 6px;
+    font-family: Helvetica;
+    color: black;
+    border: none;
+    width: fit-content;
+    height: 39px;
+    font-size: 15px;
+    background-color: var(--lightgray);
+    padding: 10px;
+}
+
+.header__searchInput {
+    height: 19px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.header__searchIcon {
+    padding: 5px 10px;
+    height: 29px !important;
+    background-color: var(--darkblue);
+    border-radius: 0px 6px 6px 0px;
+    color: white;
+    cursor: pointer;
+}
+
+.header__searchIcon:hover {
+    background-color: var(--gray);
+    color: black;
+}
+
+.header__optionLineOne {
+    font-size: 12px;
+    color: black;
+}
+
+.header__optionLineTwo {
+    font-size: 15px;
+    font-weight: 800;
+    color: black
+}
+
+.header__optionBasket {
+    display: flex;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+}
+
+.header__basketCount {
+    margin: 0px 15px 0px 5px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: right;
+}
+
+.header__option {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    color: white;
+    cursor: pointer;
+}

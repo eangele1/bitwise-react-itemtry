@@ -1,0 +1,74 @@
+#cart {
+  padding-top: 50px;
+}
+
+/* Create two equal columns that floats next to each other */
+.cart-column1 {
+  float: left;
+  width: 35%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+}
+
+.cart-column1 p {
+  margin: 0 0 30px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+}
+
+.cart-column2 {
+  float: left;
+  width: 65%;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+/* Clear floats after the columns */
+.cart-row:after {
+  content: "";
+  display: table;
+  clear: both;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 640px) {
+  .cart-column1 {
+    float: none;
+    width: 100%;
+  }
+  .cart-column2 {
+    width: 100%;
+  }
+}
+
+#cart-remove-button {
+  text-align: center;
+  background-color: var(--darkblue);
+  border-radius: 6px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  padding: 12px 8px;
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 14px;
+  width: 90px;
+}
+
+#checkout-button {
+  text-align: center;
+  background-color: var(--darkblue);
+  border-radius: 6px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  padding: 12px 8px;
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 14px;
+  width: 100%;
+}

@@ -1,0 +1,11 @@
+.footerStyle {
+    background-color: black;
+    font-size: 16px;
+    color: white;
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

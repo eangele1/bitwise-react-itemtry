@@ -1,0 +1,58 @@
+#products {
+  padding-top: 50px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 30%;
+  padding: 40px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+}
+
+.column1 p {
+  cursor: pointer;
+  color: blue;
+  margin: 0 0 30px 0;
+  display: inline-block;
+}
+
+.column2 {
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 640px) {
+  .column1 {
+    display: none !important;
+  }
+  .column2 {
+    width: 100%;
+  }
+}
+
+#cart-button {
+  text-align: center;
+  background-color: var(--darkblue);
+  border-radius: 6px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  padding: 12px 8px;
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 14px;
+  width: 90px;
+}

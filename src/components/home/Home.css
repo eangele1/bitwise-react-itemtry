@@ -1,0 +1,19 @@
+:root {
+    --darkblue: #243454;
+    --lightgray: #CCCFD7;
+    --gray: #8C9CA8;
+    --darkgray: #8C94AC;
+}
+
+.home {
+    margin: 0px auto;
+    background-image: linear-gradient(Transparent 50%, var(--darkblue) 100%);
+    min-height: 100vh;
+}
+.home__image {
+    width: 100%;
+    min-width: 1000px;
+    z-index: -1;
+    position: absolute;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)
+}
