@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Itemtry
+
+A React.js final project from BitWise Industries. Check out the live version at [itemtry.web.app](https://itemtry.web.app)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
